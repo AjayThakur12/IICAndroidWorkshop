@@ -49,4 +49,24 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="43dp"
         android:id="@+id/textView" />
+
+    <Button
+        android:text="RED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:id="@+id/btnRed"
+        android:layout_below="@+id/textView"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
+    <Button
+        android:text="BLUE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBlue"
+        android:layout_alignBaseline="@+id/btnRed"
+        android:layout_alignBottom="@+id/btnRed"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
 </RelativeLayout>

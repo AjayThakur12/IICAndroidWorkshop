@@ -1,5 +1,6 @@
 package du.iic.exampleapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +11,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     EditText et, et2;
-    Button btn;
+    Button btn, btnBlue, btnRed;
     TextView tv;
 
     @Override
@@ -23,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
         btn = (Button) findViewById(R.id.button);
         tv = (TextView) findViewById(R.id.textView);
 
+        btnBlue = (Button) findViewById(R.id.btnBlue);
+        btnRed = (Button) findViewById(R.id.btnRed);
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,6 +35,22 @@ public class MainActivity extends AppCompatActivity {
 
                 int c = a + b;
                 tv.setText(String.valueOf(c));
+            }
+        });
+
+        btnRed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, RedActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btnBlue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, BlueActivity.class);
+                startActivity(i);
             }
         });
     }
