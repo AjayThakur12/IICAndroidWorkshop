@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         btnBlue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, BlueActivity.class);
+                Intent i = new Intent(MainActivity.this, SensorActivity.class);
                 startActivity(i);
             }
         });

@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".RedActivity" />
-        <activity android:name=".BlueActivity"></activity>
+        <activity android:name=".BlueActivity" />
+        <activity android:name=".SensorActivity"></activity>
     </application>
 
 </manifest>
